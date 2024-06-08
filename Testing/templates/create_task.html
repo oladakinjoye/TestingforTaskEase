@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskEase App - Create Task</title>
+  <style>
+    /* Import the same font and global styles as the welcome page */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 80px 20px;
+    }
+
+    /* Reuse the menu tabs styles from the welcome page */
+    .menu-tabs {
+      background-color: #007bff;
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    .menu-tabs a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+
+    .menu-tabs a:hover {
+      background-color: #0056b3;
+    }
+
+    /* Add styles for the create task form */
+    .create-task-form {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+    }
+
+    .create-task-form h2 {
+      color: #333;
+      font-size: 32px;
+      font-weight: 600;
+      margin-top: 0;
+    }
+
+    .create-task-form form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+    }
+
+    .create-task-form input,
+    .create-task-form textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    .create-task-form textarea {
+      grid-column: 1 / -1;
+    }
+
+    .create-task-form button {
+      grid-column: 1 / -1;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      max-width: 250px;
+      transition: background-color 0.3s ease;
+    }
+
+    .create-task-form button:hover {
+      background-color: #0056b3;
+    }
+    .footer {
+      background-color: #333333;
+      color: #fff;
+      padding: 10px 0;
+      text-align:center;
+      position: relative;
+      font-size: 15px;
+      bottom: 0;
+      height: 20px;
+      width: 100%;
+    }
+    .footer p {
+      margin: 10px;
+      line-height: 1.5px; 
+}
+  </style>
+</head>
+<body>
+  <div class="menu-tabs">
+    <a href="#">Home</a>
+    <a href="#">Tasks</a>
+    <a href="#">Reports</a>
+  </div>
+
+  <div class="container">
+    <div class="create-task-form">
+      <h2>Create a New Task</h2>
+      <form>
+        <input type="text" placeholder="Task Name" />
+        <!--<input type="text" placeholder="Assignee" /> -->
+        <input type="date" placeholder="Due Date" />
+        <input type="text" placeholder="Status" />
+        <textarea placeholder="Task Description"></textarea>
+        <button type="submit">Create Task</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class ="footer">
+    <p>&copy; TaskEase@Alx Project. All rights reserved.</p>
+  </footer>
+</body>
+</html>
